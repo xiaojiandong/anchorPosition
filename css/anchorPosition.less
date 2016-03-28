@@ -1,0 +1,88 @@
+
+
+*{
+  font-family: '微软雅黑';
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  img{
+    display: block;
+  }
+}
+
+.page-outer-wrap{
+  width: 640px;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #000;
+  .top-banner{
+    width: 640px;
+  }
+}
+
+// 导航
+.tab-nav-wrap{
+  position: relative;
+  width: 640px;
+  height: 90px;
+  background-color: pink;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  .swiper-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 640px;
+    height: 90px;
+    line-height: 90px;
+    background-color: transparent;
+    //  color: #b187ff;
+    .swiper-slide { // 单个tab
+      text-align: center;
+      font-size: 22px;
+      width: 142px;
+      height: 90px;
+      cursor: pointer;
+      background-color: transparent;
+    }
+    .active-tab{
+      background-color: red;
+    }
+  }
+}
+
+// 导航条悬浮置顶
+.fixed-top{
+  position: fixed;
+  z-index: 100;
+  top: 0;
+}
+.split-block{
+  display: none;
+  width: 640px;
+  height: 90px;
+}
+
+
+
+.content-wrap{
+  .outer-relative-wrap{
+    position: relative;
+    .top-absolute-wrap{
+      position: absolute;
+      top: -90px;
+    }
+    .slide-content-common{
+      position: relative;
+      width: 640px;
+      top: 0;
+      left: 0;
+      font-size: 24px;
+      font-weight: bold;
+      box-sizing: border-box;
+    }
+  }
+
+}
